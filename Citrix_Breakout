@@ -1,0 +1,6 @@
+// Command Prompt from VBS //
+Option Explicit
+Dim objShell
+Set objShell = CreateObject("WScript.Shell")
+objShell.Run "%comspec% /k"
+WScript.Quit 
