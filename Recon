@@ -1,0 +1,9 @@
+// Find the Domain //
+wmic computersystem get domain
+echo %COMPUTERNAME%.%USERDNSDOMAIN%
+ipconfig /all
+
+// Find Domain Controllers //
+nslookup
+set q=SRV
+_ldap._tcp.dc._msdcs.example.org
